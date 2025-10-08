@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: floralwhite;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  margin-bottom: 0;
+}
+
+.hero {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  top: -150px;
+  z-index: 0;
+}
+
+.hero_img {
+  position: absolute;
+  background-image: url('../img/pavla_portfolio.jpg');
+  background-position: 25% center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  position: absolute;
+  top: 45vh;
+  font-size: 16pt;
+  font-weight: 300;
+  margin-left: 20px;
+  max-width: 75%;
+}
+
+#projekter{
+  display: flex;
+  padding: 0 2rem 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid_projekter{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid_projekter img{
+  width: 80vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 1024px) {
+  .hero_img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .intro {
+    position: absolute;
+    top: 76vh; 
+    left: 150px;
+    max-width: 50%;
+    font-weight: 200;
+    font-size: 30pt;
+    margin: 50px 0;
+  }
+  
+  #projekter {
+    max-width: 1200px; /* så grid’et ikke fylder hele skærmen */
+    margin: 0 auto; /* centrer indholdet */
+    padding: 150px 0; /* top og bund margin */
+  }
+  
+  .grid_projekter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 50px; /* gutter: mellemrum mellem boksene */
+    margin-top: 50px;
+  }
+  
+  .grid_projekter a {
+    display: block;
+  }
+  
+  .grid_projekter img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .grid_projekter img:hover {
+    transform: scale(1.05); /* lille zoom effekt ved hover */
+  }
+
+  /* .intro {
+    position: relative;
+    padding: 30px 20px;
+    font-weight: 200;
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  
+  /* projekter-grid i 1 kolonne som udgangspunkt */
+  /* .grid_projekter {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+  }
+  
+  .grid_projekter img {
+    width: 80vw;
+    height: auto;
+    border-radius: 10px;
+  } */ 
+  
+  
+}
