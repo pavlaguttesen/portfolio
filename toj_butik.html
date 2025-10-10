@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
+    <title>Tøjbutikken</title>
+  </head>
+  <body>
+    <header id="navigation" class="tojbutiksiden"></header>
+    <section class="beskrivelse">
+      <h1>Tøjbutikken</h1>
+
+      <p>
+        Vi fik en gruppeopgave i skolen, hvor vi fik tre små REACT opgaver. Vi
+        fordelte opgaverne imellem os og jeg fik ansvaret for tøjbutikken.
+      </p>
+
+      <p>
+        <br />
+        Opgaven gik ud på at lave en lille webapp, hvor en kunne se en liste af
+        tøjprodukter, tilføje dem til en indkøbskurv og fjerne dem igen. <br />
+        Hvert tøjprodukt havde data som mærke, pris, størrelse og beskrivelse.
+        Når man tilføjer et produkt til indkøbskurven, skulle lagerantallet for
+        det pågældende produkt også blive opdateret, så at der vil stå
+        'Udsolgt', hvis lagerantallet er 0.
+      </p>
+
+      <h2>Process</h2>
+      <p>
+        Jeg startede med at lave komponenter som 'ClothesItem', 'ClothesList',
+        'Cart'. <br />
+        Derefter arbejdede jeg med props og useState for at sende data mellem
+        komponenterne og opdatere visningen, når brugeren interagerer. <br />
+        Jeg lærte at bruge ()map til at vise flere produkter og conditional
+        rendering"if-else" i JSX til at vise "Udsolgt" eller "Tilføj til
+        kurven". <br />
+        Til sidst tilføjede jeg billeder, styling og en samlet pris i kurven.
+      </p>
+
+      <h2>Læring</h2>
+      <p>
+        Jeg har lært at arbejde med state management i React og hvordan data
+        ændres og genoptages i siden. <br />
+        Jeg har fået en forståelse over hvordan props sender data og funktioner
+        mellem komponenterne. <br />
+      </p>
+
+      <h2>Hvad ville jeg gøre bedre næste gang?</h2>
+
+      <div class="links_projekter">
+        <a target="_blank" href="https://clothing-store-beta-nine.vercel.app/"
+          >Live viewing i Vercel
+          <img src="./img/external-link.svg" alt="external-link"
+        /></a>
+        <a target="_blank" href="https://github.com/pavlaguttesen/ClothingStore"
+          >Koden i GitHub
+          <img src="./img/external-link.svg" alt="external-link"
+        /></a>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
