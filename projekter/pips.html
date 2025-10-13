@@ -5,88 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pipper</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" type="image/x-icon" href="../img/favicon.svg" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="icon" type="image/x-icon" href="../img/svg/favicon.svg" />
   </head>
   <body>
     <header id="navigation" class="projektsiden"></header>
-    <h1>Pipper</h1>
-    <div class="forklaring">
-      <h3>Semester: 3. semester</h3>
-      <h3>Programmer: Visual Studio Code</h3>
-    </div>
+    <main>
+      <section class="beskrivelse">
+        <h1>PIPPER</h1>
+        <div class="forklaring">
+          <p>Semester: 3. semester</p>
+          <p>Programmer: Visual Studio Code</p>
+        </div>
 
-    <div class="links_projekter">
-      <a target="_blank" href="pipper.vercel.app">Hjemmesiden
-        <img src="./img/external-link.svg" alt="external-link"
-      /></a>
-      <a target="_blank" href="https://github.com/pavlaguttesen/pipper"> Koden i GitHub
-        <img src="./img/external-link.svg" alt="external-link"
-      /></a>
-    </div>
+        <div class="links_projekter">
+          <hr />
+          <div class="links_projekter_indhold">
+            <a target="_blank" href="pipper.vercel.app"
+              >Hjemmesiden
+              <img src="../img/svg/external-link.svg" alt="external-link"
+            /></a>
+            <p>|</p>
+            <a target="_blank" href="https://github.com/pavlaguttesen/pipper">
+              Koden i GitHub
+              <img src="../img/svg/external-link.svg" alt="external-link"
+            /></a>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <section class="grid_en_projektsiden">
+        <p>
+          Vi fik en vores første opgave i frontend udviklingslinjefaget, hvor
+          det var en "Pipper" gruppeprojekt. Vi fik til opgave at lave en
+          version af X (tidligere kaldt "Twitter") som skulle hedde "Pipper".
+          <br />
+          Projektet gik ud på at vi skulle lave en side, hvor det var muligt at
+          indtaste et brugernavn, skrive et opslag og siden "poste" opslaget på
+          opslagstavlen. Med undervisning om backend, skulle vi lave en PHP
+          backend, som kunne hente "pips" og oprette nye "pips".
+        </p>
 
-    <p>
-      Vi fik en vores første opgave i frontend udviklingslinjefaget, hvor det
-      var en "Pipper" gruppeprojekt. Vi fik til opgave at lave en version af X
-      (tidligere kaldt "Twitter") som skulle hedde "Pipper". <br />
-      Projektet gik ud på at vi skulle lave en side, hvor det var muligt at
-      indtaste et brugernavn, skrive et opslag og siden "poste" opslaget på
-      opslagstavlen. Med undervisning om backend, skulle vi lave en PHP backend,
-      som kunne hente "pips" og oprette nye "pips".
-    </p>
+        <img
+          class="img_projekt_mobile"
+          src="../img/pipper.jpg"
+          alt="et billede af pipper siden"
+        />
+      </section>
+      <section class="grid_to_projektsiden">
+        <h2>PROCESS</h2>
 
-    <h2>Process</h2>
+        <p>
+          Vi startede med at brainstorme for hvordan siden skulle se ud og
+          hvilke funktioner den skulle have. Vi lavede nogle idéer på tavlen og
+          diskuterede dem igennem. Vi blev enige om at siden skulle have en
+          simpel og brugervenlig design, hvor brugeren kunne nemt navigere på
+          siden og for os, at forstå hvad vi koder gennem gruppeprojektet.
+          <br />
+          Vi fordelte opgaverne imellem os, hvor jeg fik ansvaret for at lave en
+          karakter tæller, navigationsbaren,at få avater til hver bruger efter
+          de har lavet et opslag gennem API og havde ansvar for stylen. <br />
+          En anden i gruppen fik også ansvar for at lave siden samt stylen og en
+          tredje fik ansvaret for at lave PHP backenden til "Pipper" siden.
+          <br />
+          Jeg startede med at lave en HTML struktur og derefter arbejdede jeg
+          med CSS for at få siden til at se ud som vi havde planlagt med min
+          anden gruppemedlem. Jeg lavede også en karakter tæller, som skulle
+          vise hvor mange karakterer der var tilbage, når brugeren skrev et
+          opslag. Jeg brugte JavaScript til at lave karakter tælleren og for at
+          få den til at opdatere sig selv, når brugeren skrev et opslag. <br />
+          Jeg arbejdede også med at få avatarer til hver bruger gennem en API,
+          som genererede en tilfældig avatar baseret på brugernavnet. Jeg brugte
+          fetch() metoden til at hente data fra API'en og viste avatarerne ved
+          siden af hvert opslag. <br />
+          Til sidst arbejdede jeg med stylen for at få siden til at se pæn ud og
+          brugervenlig. Jeg fik også til sidst at fået lavet en slet knap på
+          hvert opslag gennem JavaScript, så at bruger fik muligheden at slette
+          deres opslag.
+        </p>
+      </section>
+      <section class="grid_tre_projektsiden">
+        <h2>LÆRING</h2>
+        <p>
+          Jeg fik lært, hvor vigtigt det er at kommunikere med de andre
+          gruppemedlemmer. Da vi var to der arbejde med frontend og en i
+          backend, endte det med at vi ikke ordenligt fik kommunikere med
+          hinanden og vores frontend- og backendkode var ikke den samme. Med den
+          tid vi havde tilbage efter vi fandt ud af det, valgte vi at præsentere
+          to projekter (En frontendprojekt, hvor man kunne visuelt se "Pipper"
+          og backendprojekter, hvor man kunne se databasen). Selvom det var
+          ærgeligt at vi ikke fik kombinere frontend og backend sammen, så var
+          jeg glad for at jeg lærte hvor vigtigt det er at kommunikere med
+          hinanden, for gennem fejl lærer vi, som vores underviser altid siger.
+        </p>
 
-    <p>
-      Vi startede med at brainstorme for hvordan siden skulle se ud og hvilke
-      funktioner den skulle have. Vi lavede nogle idéer på tavlen og diskuterede
-      dem igennem. Vi blev enige om at siden skulle have en simpel og
-      brugervenlig design, hvor brugeren kunne nemt navigere på siden og for os,
-      at forstå hvad vi koder gennem gruppeprojektet. <br />
-      Vi fordelte opgaverne imellem os, hvor jeg fik ansvaret for at lave en
-      karakter tæller, navigationsbaren,at få avater til hver bruger efter de
-      har lavet et opslag gennem API og havde ansvar for stylen. <br />
-      En anden i gruppen fik også ansvar for at lave siden samt stylen og en
-      tredje fik ansvaret for at lave PHP backenden til "Pipper" siden. <br />
-      Jeg startede med at lave en HTML struktur og derefter arbejdede jeg med
-      CSS for at få siden til at se ud som vi havde planlagt med min anden
-      gruppemedlem. Jeg lavede også en karakter tæller, som skulle vise hvor
-      mange karakterer der var tilbage, når brugeren skrev et opslag. Jeg brugte
-      JavaScript til at lave karakter tælleren og for at få den til at opdatere
-      sig selv, når brugeren skrev et opslag. <br />
-      Jeg arbejdede også med at få avatarer til hver bruger gennem en API, som
-      genererede en tilfældig avatar baseret på brugernavnet. Jeg brugte fetch()
-      metoden til at hente data fra API'en og viste avatarerne ved siden af
-      hvert opslag. <br />
-      Til sidst arbejdede jeg med stylen for at få siden til at se pæn ud og
-      brugervenlig. Jeg fik også til sidst at fået lavet en slet knap på hvert
-      opslag gennem JavaScript, så at bruger fik muligheden at slette deres
-      opslag.
-    </p>
+        <h2>RESULTAT</h2>
 
-    <h2>Læring</h2>
-    <p>
-      Jeg fik lært, hvor vigtigt det er at kommunikere med de andre
-      gruppemedlemmer. Da vi var to der arbejde med frontend og en i backend,
-      endte det med at vi ikke ordenligt fik kommunikere med hinanden og vores
-      frontend- og backendkode var ikke den samme. Med den tid vi havde tilbage
-      efter vi fandt ud af det, valgte vi at præsentere to projekter (En
-      frontendprojekt, hvor man kunne visuelt se "Pipper" og backendprojekter,
-      hvor man kunne se databasen). Selvom det var ærgeligt at vi ikke fik
-      kombinere frontend og backend sammen, så var jeg glad for at jeg lærte
-      hvor vigtigt det er at kommunikere med hinanden, for gennem fejl lærer vi,
-      som vores underviser altid siger.
-    </p>
-
-    <h2>Resultat</h2>
-
-    <p>
-      Resultatet blev et projekt som var splittet i to. Et projekt, hvor man
-      visuelt kunne se og interagere med "Pipper" siden, hvor brugeren har
-      muligheden for at lave et brugernavn, skrive til opslag og 'poste' det på
-      opslagstavlen og hvis de fortryder det, så kan de slette opslaget.
-    </p>
+        <p>
+          Resultatet blev et projekt som var splittet i to. Et projekt, hvor man
+          visuelt kunne se og interagere med "Pipper" siden, hvor brugeren har
+          muligheden for at lave et brugernavn, skrive til opslag og 'poste' det
+          på opslagstavlen og hvis de fortryder det, så kan de slette opslaget.
+        </p>
+      </section>
+    </main>
 
     <footer id="footer"></footer>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
