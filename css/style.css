@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 
 * {
   margin: 0;
@@ -47,6 +49,19 @@ header {
   max-width: 75%;
 }
 
+.projektsiden + .beskrivelse {
+  padding-top: 100px;
+}
+
+header.projektsiden .nav_logo,
+header.projektsiden nav a {
+  color: black !important;
+}
+
+header.projektsiden .burger_menu span {
+  background-color: black !important;
+}
+
 #projekter {
   display: flex;
   padding: 0 2rem 4rem 2rem;
@@ -68,12 +83,63 @@ header {
   border: solid 2px #000;
 }
 
+/* projekter siderne */
+
+.beskrivelse {
+  margin: 0 20px;
+}
+
+.forklaring{
+  margin-top: 10px;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.links_projekter{
+  margin: 20px 0;
+}
+
+.links_projekter hr{
+  margin: 10px 0;
+}
+
+.links_projekter_indhold{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 11pt;
+}
+
+.links_projekter_indhold img{
+  width: 12px;
+  height: auto;
+}
+
+.links_projekter_indhold a{
+  color: black;
+}
+
+.links_projekter_indhold a:visited{
+  color: black;
+}
+
+.grid_en_projektsiden, .grid_to_projektsiden{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 20px;
+}
+
+.grid_en_projektsiden h2, .grid_to_projektsiden h2{
+  margin: 20px 0 10px 0;
+}
+
 @media (min-width: 1024px) {
   .nav_mobile {
     display: none;
   }
 
-  header{
+  header {
     position: absolute;
     top: 0;
   }

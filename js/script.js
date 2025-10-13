@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Hent navigation
-  fetch("navigation.html")
+  fetch("../komponent/navigation.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("navigation").innerHTML = data;
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Hent footer
-  fetch("footer.html")
+  fetch("../komponent/footer.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;

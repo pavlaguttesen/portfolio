@@ -131,15 +131,6 @@ nav a:visited {
   color: black;
 }
 
-body.omsiden nav a,
-body.kontaktsiden nav a {
-  color: black;
-}
-
-body.omsiden .nav_center,
-body.kontaktsiden .nav_center {
-  color: black;
-}
 
 /*Navigationsbaren slut - mobil*/
 
