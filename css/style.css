@@ -87,13 +87,32 @@ header.projektsiden .burger_menu span {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .grid_projekter img {
-  width: 80vw;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  border: solid 2px #000;
+  border: solid 0.5px lightgrey;
+
+}
+
+.projekt a {
+  color: black;
+  text-decoration: none;
+}
+
+.projekt a:visited {
+  color: black;
+}
+
+.projekt_navn{
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 11pt;
 }
 
 /* projekter siderne */
@@ -173,6 +192,12 @@ footer {
 }
 
 @media (min-width: 765px) {
+
+  .grid_projekter{
+    grid-template-columns: 2, 1fr;
+  }
+
+  /*Projekt siderne*/
   .beskrivelse {
     margin: 10px 20px;
   }
@@ -214,15 +239,15 @@ footer {
   }
 
   #projekter {
-    max-width: 1200px; /* så grid’et ikke fylder hele skærmen */
-    margin: 50px auto; /* centrer indholdet */
-    padding: 150px 0; /* top og bund margin */
+    max-width: 1200px; 
+    margin: 50px auto; 
+    padding: 150px 0; 
   }
 
   .grid_projekter {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
-    gap: 50px; /* gutter: mellemrum mellem boksene */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
     margin-top: 50px;
   }
 
@@ -231,8 +256,8 @@ footer {
   }
 
   .grid_projekter img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
