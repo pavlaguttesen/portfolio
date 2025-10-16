@@ -62,16 +62,23 @@ header {
 }
 
 .projektsiden,
-.beskrivelse {
+.beskrivelse,
+.om {
   padding-top: 100px;
 }
 
 header.projektsiden .nav_logo,
-header.projektsiden nav a {
+header.projektsiden nav a,
+header.omsiden .nav_logo,
+header.omsiden nav a,
+header.kontaktsiden .nav_logo,
+header.kontaktsiden nav a {
   color: black !important;
 }
 
-header.projektsiden .burger_menu span {
+header.projektsiden .burger_menu span,
+header.omsiden .burger_menu span,
+header.kontaktsiden .burger_menu span {
   background-color: black !important;
 }
 
@@ -97,7 +104,6 @@ header.projektsiden .burger_menu span {
   height: auto;
   border-radius: 10px;
   border: solid 0.5px lightgrey;
-
 }
 
 .projekt a {
@@ -109,11 +115,63 @@ header.projektsiden .burger_menu span {
   color: black;
 }
 
-.projekt_navn{
+.projekt_navn {
   margin-top: 10px;
   font-weight: 400;
   font-size: 11pt;
 }
+
+/* om */
+
+.om {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tekst_om h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tekst_om {
+  margin: 0 20px;
+  line-height: 1.5;
+
+}
+
+.img_om img {
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  margin: 40px 0 20px 0;
+  padding: 0 20px;
+}
+
+.praktikant{
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.praktikant p{
+  font-weight: 400;
+  line-height: 2;
+}
+
+.kompetencer {
+  margin: 0 20px 20px 20px;
+  line-height: 1.5;
+}
+
+.kompetencer h2 {
+  margin: 20px 0 10px 0;
+}
+
+/* kontakt */
 
 /* projekter siderne */
 
@@ -194,13 +252,39 @@ footer {
 
 @media (min-width: 765px) {
 
-  .grid_projekter{
+  /* om */
+  .om{
+    padding-top: 150px;
+  }
+  .grid_om{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .tekst_om{
+    margin-top: 20px;
+  }
+
+  .grid_projekter {
     grid-template-columns: repeat(2, 1fr);
   }
 
+
+.img_om img {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.kompetencer hr{
+  max-width: 100%;
+}
+
   /*Projekt siderne*/
 
-  .projekt_main{
+  .projekt_main {
     max-width: 1400px;
   }
   .beskrivelse {
@@ -244,9 +328,9 @@ footer {
   }
 
   #projekter {
-    max-width: 1400px; 
-    margin: 50px auto; 
-    padding: 150px 0; 
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 150px 0;
   }
 
   .grid_projekter {
@@ -268,8 +352,25 @@ footer {
   }
 
   .grid_projekter img:hover {
-    transform: scale(1.05); /* lille zoom effekt ved hover */
+    transform: scale(1.05);
   }
+
+  /* om */
+
+  .praktikant{
+    margin: 20px 0;
+  }
+
+  .kompetencer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .kompetencer hr{
+    grid-column: span 2;
+  }
+
 
   /*projektersiderne*/
 
