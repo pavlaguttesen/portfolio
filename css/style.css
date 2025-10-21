@@ -57,8 +57,9 @@ header {
   top: 42vh;
   font-size: 16pt;
   font-weight: 300;
-  margin-left: 20px;
+  margin-left: 40px;
   max-width: 75%;
+  padding: 20px 0;
 }
 
 .projektsiden,
@@ -87,7 +88,7 @@ header.kontaktsiden .burger_menu span {
   padding: 0 2rem 4rem 2rem;
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 .grid_projekter {
@@ -279,11 +280,51 @@ header.kontaktsiden .burger_menu span {
   line-height: 1.5;
 }
 
+/* Egne projekt */
+.egne_projekter{
+  display: flex;
+  margin: 40px
+} 
+
+.egne_projekter h1{
+  font-size: 20pt;
+margin: 70px 0 20px 0;
+}
+
+.egne_projekter_img{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 20px 40px;
+}
+
+.egne_projekter_img p {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0;
+  font-size: 10pt;
+}
+
+.egne_projekter_img img{
+  width: 100%;
+  height: auto;
+  border: 0.8px solid lightgrey;
+}
 footer {
   height: 100%;
 }
 
 @media (min-width: 765px) {
+  .intro {
+    font-size: 18pt;
+    margin-left: 40px;
+    max-width: 60%;
+    padding: 30px 0;
+  }
+
+  .projekt {
+    margin-top: 40px;
+  }
   /* om */
   .om {
     padding-top: 150px;
@@ -319,11 +360,9 @@ footer {
     max-width: 65%;
   }
 
-  .kontakt a{
-color: black;
+  .kontakt a {
+    color: black;
   }
-
-
 
   /*Projekt siderne*/
 
@@ -341,6 +380,25 @@ color: black;
 
   .links_projekter hr {
     max-width: 45%;
+  }
+/* Egne projekter */
+.egne_projekter {
+  margin-top: 80px;
+}
+
+.egne_projekter h1{
+  font-size: 20pt;
+}
+
+.egne_projekter p{
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 30px 0;
+}
+
+  .egne_projekter_img{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -367,13 +425,13 @@ color: black;
     max-width: 50%;
     font-weight: 200;
     font-size: 30pt;
-    margin: 50px 0;
+    margin: 20px 0;
   }
 
   #projekter {
-    max-width: 1400px;
+    max-width: 900px;
     margin: 50px auto;
-    padding: 150px 0;
+    padding: 140px 0;
   }
 
   .grid_projekter {
@@ -464,7 +522,7 @@ color: black;
     break-inside: avoid;
   }
 
-  .grid_en_tekst{
+  .grid_en_tekst {
     margin-top: 30px;
   }
 
@@ -472,5 +530,36 @@ color: black;
     width: 100%;
     height: auto;
     max-width: 500px;
+  }
+
+  /* Egne projekter */
+
+  .egne_projekter {
+    margin-top: 80px;
+  }
+
+  .egne_projekter h1{
+    font-size: 24pt;;
+  }
+
+  .egne_projekter p{
+    line-height: 1.5;
+    max-width: 70%;
+    margin: 40px 0;
+  }
+
+  .egne_projekter_img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 40px;}
+ 
+}
+
+@media (min-width: 1300px) {
+  #projekter {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 130px 0;
   }
 }
