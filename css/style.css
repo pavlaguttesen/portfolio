@@ -129,6 +129,10 @@ header.kontaktsiden .burger_menu span {
   grid-template-columns: 1fr;
 }
 
+.om p{
+  line-height: 1.5;
+}
+
 .tekst_om h1 {
   font-size: 22pt;
   font-weight: 700;
@@ -137,7 +141,6 @@ header.kontaktsiden .burger_menu span {
 
 .tekst_om {
   margin: 0 20px;
-  line-height: 1.5;
 }
 
 .img_om img {
@@ -164,11 +167,14 @@ header.kontaktsiden .burger_menu span {
 
 .kompetencer {
   margin: 0 20px 20px 20px;
-  line-height: 1.5;
 }
 
 .kompetencer h2 {
   margin: 20px 0 10px 0;
+}
+
+.kompetencer p {
+  line-height: 1.5;
 }
 
 /* kontakt */
@@ -534,12 +540,13 @@ footer {
 
   /* Egne projekter */
 
+
   .egne_projekter {
     margin-top: 80px;
   }
 
   .egne_projekter h1{
-    font-size: 24pt;;
+    font-size: 24pt;
   }
 
   .egne_projekter p{
@@ -550,9 +557,9 @@ footer {
 
   .egne_projekter_img{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin: 40px;}
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: masonry;
+    gap: 40px;}
  
 }
 
