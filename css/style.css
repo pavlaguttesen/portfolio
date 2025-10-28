@@ -499,6 +499,10 @@ footer {
     max-width: 35%;
   }
 
+  .grid_en_projektsiden p{
+    margin-top: 35px;
+  }
+
   .grid_en_projektsiden,
   .grid_tre_projektsiden {
     display: grid;
